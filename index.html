@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-<html lang="en-us">
+<head>
+    <html lang="en-us">
     <meta charset="utf-8" />
-    <title>Phelan O'Neill</title>    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Phelan O'Neill</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <style>
-
-        #header-background {
-            background-color: #4aaaa5;
-        }
-        
-        #header-text {
-            color: #ffffff;
-        }
-
         #background-image {
             background-image: url("assets/images/background-image.png");
+        }
+
+        #center-text {
+            width:100%;
         }
 
         #main-content {
             background-color:white;
         }
         
+        #bioimage {
+            max-width: 240px;
+            margin-right: 15px;
+        }
+
         footer {
             position: fixed;
             width: 100%;
@@ -39,40 +41,48 @@
 
     </style>
 </head>
-<body id=background-image>
-    <nav class="navbar navbar-default">
-        <div class="row">
+
+<body id="background-image">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="row" id="center-text">
             <div class="col-md-2"></div>
-                <div class="container-fluid col-md-8">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header" id="header-background">
-                        <a class="navbar-brand" id="header-text" href="#">Phelan O'Neill</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>	
-                        </ul>
-                </div><!-- /.container-fluid -->
+            <div class="col-md-8">
+                <a class="navbar-brand">Phelan O'Neill</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse float-right" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a></li>   
+                            </li>
+                    </ul> 
+                </div>    
             </div>
+            <div class="col-md-2"></div>
         </div>
     </nav>
-    <div class="container-fluid">
+
+    <div class="container-fluid pt-4">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" id=main-content>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>About Me</h2> 
+                        <h2 class="mt-4">About Me</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/images/bio-image.jpg" alt="Phelan-headshot" class="img-thumbnail">
-                    </div>
-                    <div class="col-md-8">
+                    <div class="col-md-12">
+                        <img src="assets/images/bio-image.jpg" alt="Phelan-headshot" class="img-thumbnail float-left" id="bioimage">
                         <p>Phelan O'Neill is a Project Manager and a Full Stack Development Bootcamp student based in Minneapolis, Minnesota. He has spent the past 8 years working at the forefront of politics and technology.</p>
 
                         <p>After working in Iowa on Barack Obama's Presidential campaign in 2012, he traveled the country working on a variety of political campaigns and causes. On the campaign trail, Phelan always sought to find new technology to better connect with voters and volunteers alike.</p>
@@ -86,5 +96,5 @@
     </div>
     <Footer>
         <p>© Phelan O'Neill 2018</p>
-    </Footer>   
+    </Footer>
 </body>

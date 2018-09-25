@@ -3,7 +3,7 @@
 <html lang="en-us">
     <meta charset="utf-8" />
     <title>Phelan O'Neill</title>    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
 
         #header-background {
@@ -39,33 +39,61 @@
 
     </style>
 </head>
-<body id=background-image>
-    <nav class="navbar navbar-default">
-        <div class="row">
-            <div class="col-md-2"></div>
-                <div class="container-fluid col-md-8">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header" id="header-background">
-                        <a class="navbar-brand" id="header-text" href="#">Phelan O'Neill</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>	
-                        </ul>
-                </div><!-- /.container-fluid -->
+<body id="background-image">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="row" id="center-text" style= "width: 100%">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <a class="navbar-brand">Phelan O'Neill</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse float-right" id="navbarText">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a></li>   
+                                </li>
+                        </ul> 
+                    </div>    
+                </div>
+                <div class="col-md-2"></div>
             </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
+        </nav>
+       
+    <div class="container-fluid pt-4">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-8" id=main-content> </div>
+            <div class="col-md-8" id=main-content> 
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input class="form-control" placeholder="Jon Doe">
+                    </div>
+                    <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+                        <textarea class="form-control" 
+                        rows="8"></textarea>
+                    </div>
+                </form>
+                <br>
+            </div>
             <div class="col-md-2"></div>
         </div>
     </div>
+
     <Footer>
         <p>© Phelan O'Neill 2018</p>
     </Footer>   
