@@ -1,5 +1,36 @@
-.background-image {
+#body-style {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0 auto;
+    clear: both;
+    color: #777777;
     background-image: url("../images/background-image.png");
+    margin-bottom: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid #cccccc;
+}
+
+.hd-content {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.background {
+    padding: 1rem 1.5rem;
+    background-color: #4aaaa5; 
+}
+.name {
+    color: #ffffff;
+}
+
+.header-link-border{
+    margin-top: 10px;
+    border-right: 1px solid #cccccc;
+}
+
+.header-link{
+    margin-top: 10px;
 }
 
 .center-text {
@@ -8,12 +39,43 @@
 
 .main-content {
     background-color:white;
+    border: 1px solid #dddddd;
+}
+
+h2 {  
+    font-size: 1.5em;
+    color: #4aaaa5;
+    font-weight: bolder;
+}
+
+#about-border {
+    border-bottom: 1px #cccccc solid;
 }
 
 .bioimage {
     max-width: 240px;
     margin-right: 15px;
 }
+
+.col-md-3 img {
+    max-width: 180px;
+    max-height: 140px;
+}
+
+.label {
+    position: absolute;
+    left: 4px;
+    bottom: 10px;
+    top: 100px;
+    float: left;
+    margin-left: 11px;
+    margin-bottom:25px;
+    width: 180px;
+    text-align: center;
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
 
 footer {
     position: fixed;
