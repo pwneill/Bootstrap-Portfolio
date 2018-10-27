@@ -8,24 +8,28 @@ var portfolioArr = [
     hangman = {
         name: "Hangman Game",
         img: 'assets/images/hangman.png',
-        description: "A word guess game using Boostrap vanilla Javascript and custom CSS starring Minnesota music icons"
+        description: "A word guess game using Boostrap vanilla Javascript and custom CSS starring Minnesota music icons",
+        url: 'https://pwneill.github.io/Word-Guess-Game/'
     },
     rpgGame = {
         name: "The Wire RPG",
         img: 'assets/images/rpg.png',
-        description: "An RPG game based on The Wire using Boostrap, JQuery vanilla Javascript and custom CSS"
+        description: "An RPG game based on The Wire using Boostrap, JQuery vanilla Javascript and custom CSS",
+        url: "https://pwneill.github.io/unit-4-game/"
     },
 
     trivia = {
         name: "90s/00s Rap Trivia Game",
         img: 'assets/images/trivia.png',
-        description: "Uses Bootstrap, JQuery, vanilla Javascript and custom CSS to generate a trivia game with a countdown and scores"
+        description: "Uses Bootstrap, JQuery, vanilla Javascript and custom CSS to generate a trivia game with a countdown and scores",
+        url: "https://pwneill.github.io/TriviaGame/"
     },
 
     gifTastic = {
         name: "GifTastic",
         img: 'assets/images/gifs.png',
-        description: "Uses AJAX, Jquery, Javascript, Boostrap and the Giphy API to generate gifs of TV Characters"
+        description: "Uses AJAX, Jquery, Javascript, Boostrap and the Giphy API to generate gifs of TV Characters",
+        url: "https://pwneill.github.io/GifTastic/"
     }
 
 ]
@@ -40,10 +44,15 @@ function header () {
 }
 
 function preview () {
-    var preview = $("<img>")
-    $(preview).attr("src", randomDisplay.img)
-    $(preview).attr("alt", randomDisplay.name)
-    $(preview).addClass("mt-3")
+    var preview = $("<a>")
+    preview.attr("href", randomDisplay.url)
+
+    var previewImg = $("<img>")
+    $(previewImg).attr("src", randomDisplay.img)
+    $(previewImg).attr("alt", randomDisplay.name)
+    $(previewImg).addClass("mt-3")
+
+    $(preview).append(previewImg)
     $(".main-content").append(preview)
 }
 
