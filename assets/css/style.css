@@ -80,6 +80,14 @@ h2 {
     color: #ffffff;
 }
 
+img {
+    width:80%;
+    border: 1px solid #cccccc;
+}
+
+#portfolio-content {
+    text-align: center;
+}
 
 footer {
     position: fixed;
