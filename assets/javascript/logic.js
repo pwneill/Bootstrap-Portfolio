@@ -30,6 +30,13 @@ var portfolioArr = [
         img: 'assets/images/gifs.png',
         description: "Uses AJAX, Jquery, Javascript, Boostrap and the Giphy API to generate gifs of TV Characters",
         url: "https://pwneill.github.io/GifTastic/"
+    },
+    trainScheduler = {
+        name: "Train Scheduler",
+        img:  "assets/images/trainscheduler.png",
+        description: "Uses Jquery, Javascript, Bootstrap and Moment.js to generate a train schedule that updates in real time",
+        url: 'https://pwneill.github.io/train-scheduler/'
+
     }
 
 ]
@@ -77,7 +84,6 @@ function changePortfolio() {
 
     description()
 
-
 }
 
 function run() {
@@ -96,9 +102,6 @@ function increment() {
         changePortfolio()
 
     }
-
-
-
 }
 
 $(document).ready(function () {
