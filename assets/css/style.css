@@ -21,13 +21,13 @@ h1, h2, h3, h4, h5, a {
     font-weight: 700;
 }
 
-p, #textBox {
+p, #bio {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-#textBox {
+#bio {
     background: #fefefe;
     opacity: .6
 }
@@ -60,6 +60,11 @@ img {
     background: white;
 }
 
+#portfolio {
+    height: 600px;
+
+}
+
 .portfolio-page {
     background-image: url("../images/portfolio-background.jpg");
     background-position: center top;
@@ -72,6 +77,7 @@ img {
 }
 
 .carousel {
+    height: 80%;
     width: 90%;
     float: center;
 }
@@ -80,7 +86,14 @@ img {
     width: 100%;
 }
 
+.carousel-caption {
+    background: #fefefe;
+    opacity: .85;
+    width: 70%;
+}
+
 footer {
     background: black;
     color: white;
+    text-align: center;
 }
