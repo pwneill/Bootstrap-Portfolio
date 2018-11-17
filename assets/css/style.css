@@ -45,19 +45,19 @@ p, #bio {
     height: 100%;
     max-height: 70px;
     width: 20%;
-    background: white;
+    background: #fefefe;
     border: 0;
 }
 
 .links-div {
-    background: white;
+    background: #fefefe;
     opacity: .90;
     vertical-align: middle;
     max-width: 450px;
     float: center;
 }
 img {
-    background: white;
+    background: #fefefe;
 }
 
 #portfolio {
@@ -73,7 +73,11 @@ img {
 }
 
 .portfolio-header,#whiteText {
-    color: white;
+    color: #fefefe;
+}
+
+.carousel .carousel-caption { 
+    visibility: hidden; 
 }
 
 .carousel {
@@ -93,7 +97,8 @@ img {
 }
 
 footer {
+    border-top: 2px solid #fefefe;
     background: black;
-    color: white;
+    color: #fefefe;
     text-align: center;
 }
