@@ -1,11 +1,18 @@
 header {
-    position:relative;
+    position:fixed;
+    width: 100%;
+    background: #fefefe;
+    z-index: 2;
 }
 
 .head {    
     font-size: 18px;
-    position: absolute;
-    bottom: 1.2rem;
+    position: relative;
+    text-align:center;
+}
+
+h4 {
+    display: inline-block;
 }
 
 h1, h2, h3, h4, h5, a {
@@ -14,10 +21,15 @@ h1, h2, h3, h4, h5, a {
     font-weight: 700;
 }
 
-p, #bio {
+p, #textBox {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+#textBox {
+    background: #fefefe;
+    opacity: .6
 }
 
 .landing-page {
@@ -37,15 +49,15 @@ p, #bio {
     border: 0;
 }
 
-#links-div {
+.links-div {
     background: white;
     opacity: .90;
     vertical-align: middle;
+    max-width: 450px;
+    float: center;
 }
-
 img {
     background: white;
-    opacity: 1;
 }
 
 .portfolio-page {
@@ -55,100 +67,20 @@ img {
     background-repeat: no-repeat;
 }
 
-/* .navbar {
-    border-bottom: 1px solid #cccccc;
+.portfolio-header,#whiteText {
+    color: white;
 }
 
-.hd-content {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-
+.carousel {
+    width: 90%;
+    float: center;
 }
 
-.background {
-    padding: 1rem 1.5rem;
-    background-color: #4aaaa5; 
-}
-.name {
-    color: #ffffff;
-}
-
-.header-link-border{
-    margin-top: 10px;
-    border-right: 1px solid #cccccc;
-}
-
-.header-link{
-    margin-top: 10px;
-}
-
-.center-text {
-    width:100%;
-}
-
-.main-content {
-    background-color:white;
-    border: 1px solid #dddddd;
-}
-
-h2 {  
-    font-size: 1.5em;
-    color: #4aaaa5;
-    font-weight: bolder;
-}
-
-#about-border {
-    border-bottom: 1px #cccccc solid;
-}
-
-.bioimage {
-    max-width: 240px;
-    margin-right: 15px;
-}
-
-.col-md-3 img {
+.carousel-img {
     width: 100%;
-    height: 100%;
-    max-width: 180px;
-    max-height: 140px;
-}
-
-.label {
-    position: absolute;
-    left: 4px;
-    bottom: 10px;
-    top: 100px;
-    float: left;
-    margin-left: 11px;
-    margin-bottom:25px;
-    height: 22px;
-    width: 100%;
-    max-width: 180px;
-    text-align: center;
-    background: #4aaaa5;
-    color: #ffffff;
-}
-
-img {
-    width:80%;
-    border: 1px solid #cccccc;
-}
-
-#portfolio-content {
-    text-align: center;
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 5px solid #4aaaa5;
-    background: #666666;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-} 
-*/
+    background: black;
+    color: white;
+}
