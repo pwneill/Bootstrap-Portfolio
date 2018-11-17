@@ -1,5 +1,23 @@
-h3, h5, p {
-    color:white;
+header {
+    position:relative;
+}
+
+.head {    
+    font-size: 18px;
+    position: absolute;
+    bottom: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, a {
+    color:black;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+p, #bio {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .landing-page {
@@ -7,14 +25,14 @@ h3, h5, p {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .85;
+    height:100%;
 }
 
 .portfolio-links {
     display:inline-block;
     height: 100%;
-    max-height: 80px;
-    width: 25%;
+    max-height: 70px;
+    width: 20%;
     background: white;
     border: 0;
 }
@@ -23,6 +41,11 @@ h3, h5, p {
     background: white;
     opacity: .90;
     vertical-align: middle;
+}
+
+img {
+    background: white;
+    opacity: 1;
 }
 
 .portfolio-page {
