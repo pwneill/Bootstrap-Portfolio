@@ -17,10 +17,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700,800|Roboto:400" rel="stylesheet">
 
+    <script src="assets/javascript/app.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
@@ -31,26 +32,26 @@
                 <h1>Phelan O'Neill</h1>
             </div>
             <div class="col-md-6 pt-3 pl-2 offset-md-1 text-center head">
-                <a class="pr-2 border-right" href="#bio">
-                    <h4>About</h4>
+                <a class="pr-2 border-right" href="#landing-page">
+                    <h4 id='head1'>About</h4>
                 </a>
-                <a class="pl-2 pr-2 border-right" href="#portfolio">
-                    <h4>Portfolio</h4>
+                <a class="pl-2 pr-2 border-right" href="#portfolio-page">
+                    <h4 id='head2'>Portfolio</h4>
                 </a>
-                <a class="pl-2 pr-2 border-right" href="/resume.pdf" target="_blank">
-                    <h4>Contact</h4>
+                <a class="pl-2 pr-2 border-right" href="#contact-page">
+                    <h4 id='head3'>Contact</h4>
                 </a>
             </div>
     </header>
     <section class="pt-5">
-        <div class="container-fluid landing-page mr-2">
+        <div class="container-fluid mr-2" id="landing-page">
             <div class="row pt-4 pr-2">
                 <div class="col-md-3 offset-md-1 pt-4 pt-4 mb-4 text-center">
                     <h3> See More </h3>
                     <div class="pt-1 pb-1 border links-div">
                         <a href="https://github.com/pwneill/"><img class="portfolio-links ml-0 mr-4" src="assets/images/github.png"></a>
                         <a href="https://www.linkedin.com/in/phelanoneill/"><img class="portfolio-links mr-4" src="assets/images/linkedin.png"></a>
-                        <a href="#"><img class="portfolio-links mr-0" src="assets/images/resume.png"></a>
+                        <a href="resume.pdf"><img class="portfolio-links mr-0" src="assets/images/resume.png"></a>
                     </div>
                 </div>
                 <div class="col-md-4 offset-md-3 pt-4 pt-4 mb-4" id="bio">
@@ -79,41 +80,49 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid portfolio-page mr-2" id="portfolio">
-            <div class="row">
+        <div class="container-fluid mr-2" id="portfolio-page">
+            <div class="row" id="portfolio">
                 <div class="col-md-8 offset-md-2">
                     <h2 class="pt-3 text-center portfolio-header">Portfolio</h2>
                     <div id="portfolioCarousel" class="carousel slide pt-3 pb-5" data-ride="carousel">
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                    <a href="https://pwneill.github.io/GifTastic/" target="_blank"><img class="carousel-img" src="assets/images/gifs.png" alt="gifs"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Giftastic <a href="https://github.com/pwneill/GifTastic" target="_blank">(Repository)</a><h5>
-                                        <p>Uses the GIPHY API to find GIFs of popular tv characters. Uses Boostrap, Javascript, JQuery and Cookies.</p>
-                                    </div>
-                            </div>
-                            <div class="carousel-item">
-                                    <a href="https://pwneill.github.io/The-Wire-RPG/" target="_blank"><img class="carousel-img" src="assets/images/rpg.png" alt="wireRPG">
+                                <a href="https://pwneill.github.io/GifTastic/" target="_blank"><img class="carousel-img"
+                                        src="assets/images/gifs.png" alt="gifs"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>The Wire RPG  <a href="https://github.com/pwneill/The-Wire-RPG" target="_blank">(Repository)</a></h5>
-                                    <p>An RPG game featuring characters from HBO's <i>The Wire</i>. Uses Boostrap, Javascript and JQuery.</p>
+                                    <h5>Giftastic <a href="https://github.com/pwneill/GifTastic" target="_blank">(Repository)</a></h5>
+                                    <p>Uses the GIPHY API to find GIFs of popular tv characters. Uses Boostrap,
+                                        Javascript, JQuery and Cookies.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                    <a href="https://pwneill.github.io/train-scheduler" target="_blank"><img class="carousel-img" src="assets/images/trainscheduler.png" alt="trains"></a>
+                                <a href="https://pwneill.github.io/The-Wire-RPG/" target="_blank"><img class="carousel-img"
+                                        src="assets/images/rpg.png" alt="wireRPG">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>The Wire RPG <a href="https://github.com/pwneill/The-Wire-RPG" target="_blank">(Repository)</a></h5>
+                                        <p>An RPG game featuring characters from HBO's <i>The Wire</i>. Uses Boostrap,
+                                            Javascript and JQuery.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://pwneill.github.io/train-scheduler" target="_blank"><img class="carousel-img"
+                                        src="assets/images/trainscheduler.png" alt="trains"></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Train Scheduler<a href="https://github.com/pwneill/train-scheduler" target="_blank">(Repository)</a></h5>
-                                    <p>A train scheduling app that updates in real time. Uses Boostrap, Javascript, JQuery, Moment.js, and Firebase</p>
+                                    <p>A train scheduling app that updates in real time. Uses Boostrap, Javascript,
+                                        JQuery, Moment.js, and Firebase</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                    <a href="https://github.com/pwneill/Whats-Happn" target="_blank"><img class="carousel-img" src="assets/images/whats-happn.png" alt="whats-happn"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>What's Happ'n?<a href="https://github.com/pwneill/Whats-Happn" target="_blank">(Repository)</a></h5>
-                                        <p>A location based app that makes calls from the Eventbrite and SeatGeek APIs. Also uses Boostrap, Javascript, JQuery UI, and Firebase.</p>
-                                    </div>
+                                <a href="https://github.com/pwneill/Whats-Happn" target="_blank"><img class="carousel-img"
+                                        src="assets/images/whats-happn.png" alt="whats-happn"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>What's Happ'n?<a href="https://github.com/pwneill/Whats-Happn" target="_blank">(Repository)</a></h5>
+                                    <p>A location based app that makes calls from the Eventbrite and SeatGeek APIs.
+                                        Also uses Boostrap, Javascript, JQuery UI, and Firebase.</p>
                                 </div>
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -127,8 +136,15 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid portfolio-page mr-2" id="Contact">
-
+        <div class="container-fluid mr-2" id="contact-page">
+            <div class="row" id="contact">
+                <div class="col-md-4 offset-md-4 pt-4 pt-4 mb-4">
+                    <h3 class="text-center pb-4"> Contact Me</h3>
+                        <i class="fa fa-envelope fa-3x pb-2 pr-2"></i> <span class="contact-content">phelan.oneill@gmail.com</span><br>
+                        <i class="fa fa-phone fa-3x pb-2"></i> <span class="contact-content">(952) 210-6863</span>
+                </div>
+            </div>
+        </div>
     </section>
     <Footer>
         <p class="mb-0 mr-2" id="whiteText">© Phelan O'Neill 2018</p>

@@ -1,7 +1,7 @@
-$(".carousel").hover(function() {
+$(".carousel").hover(function () {
     $(".carousel-caption").addClass("animated fadeIn")
 })
 
-$(document).ready(function(){
-    $(".carousel").carousel({interval: 10000});
+$(document).ready(function () {
+    $(".carousel").carousel({ interval: 10000 });
 })

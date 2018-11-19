@@ -21,18 +21,18 @@ h1, h2, h3, h4, h5, a {
     font-weight: 700;
 }
 
-p, #bio {
+p, #bio, #contact {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-#bio {
+#bio, #contact {
     background: #fefefe;
     opacity: .6
 }
 
-.landing-page {
+#landing-page {
     background-image: url("../images/landing-background.jpg");
     background-position: center top;
     background-size: cover;
@@ -60,16 +60,13 @@ img {
     background: #fefefe;
 }
 
-#portfolio {
-    height: 600px;
-
-}
-
-.portfolio-page {
+#portfolio-page {
     background-image: url("../images/portfolio-background.jpg");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 635px;
+
 }
 
 .portfolio-header,#whiteText {
@@ -99,7 +96,22 @@ img {
 
 .carousel-caption {
     background: #fefefe;
-    width: 70%;
+    width: 75%;
+}
+
+#contact-page {
+    background-image: url("../images/contact-background.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.contact-content {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+    font-size: 20px;
 }
 
 footer {
@@ -108,3 +120,12 @@ footer {
     color: #fefefe;
     text-align: center;
 }
+
+#landing-page, #portfolio-page, #contact-page { 
+    padding-top: 65px; 
+  }
+/* 
+IN PROGRESS - when scroll to a section, highlight the relevant item in the header
+  .active {
+    background: red;
+} */

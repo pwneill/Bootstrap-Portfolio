@@ -30,17 +30,17 @@ If you are opting out of career services, this is *still a required assignment*.
 
 To receive a passing grade on this assignment, you should meet all of the content and design requirements listed below as well as all of the requirements listed under "Polish Your Portfolio & Github" in the "Employer Ready" section of the [Employer Ready vs. Employer Competitive Checklist](https://drive.google.com/file/d/0BwhzeIUMYf1nV2JQcGdkU3ktcnFBLUZ4X09VSXliTUtJZWsw/view). These two sets of requirements should be mostly the same. -->
 
-#### Content
+<!-- #### Content
 
-Your updated site should have the following content:
+Your updated site should have the following content: -->
 
 <!-- * Your name
 
 * Links to your GitHub profile & LinkedIn page  -->
 
-* your email address and phone number
+<!-- * your email address and phone number -->
 
-* A link to a PDF of your resume
+<!-- * A link to a PDF of your resume -->
 
 <!-- * List of projects. For each project make sure you have the following:
 
