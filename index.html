@@ -22,24 +22,22 @@
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700,800|Roboto:400" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="assets/javascript/app.js"></script>
-
 </head>
 
 <body>
     <header>
         <div class="row pt-3 pr-2 border-bottom">
-            <div class="col-md-3 offset-1 pt-1 pb-2 text-center" id="title">
+            <div class="col-md-5 pt-1 pb-2 text-center" id="title">
                 <h1>Phelan O'Neill</h1>
             </div>
-            <div class="col-md-4 pt-3 pl-2 offset-md-3 head">
+            <div class="col-md-6 pt-3 pl-2 offset-md-1 text-center head">
                 <a class="pr-2 border-right" href="#bio">
                     <h4>About</h4>
                 </a>
                 <a class="pl-2 pr-2 border-right" href="#portfolio">
                     <h4>Portfolio</h4>
                 </a>
-                <a class="pl-2 border-right" href="#">
+                <a class="pl-2 pr-2 border-right" href="/resume.pdf" target="_blank">
                     <h4>Contact</h4>
                 </a>
             </div>
@@ -58,20 +56,18 @@
                 <div class="col-md-4 offset-md-3 pt-4 pt-4 mb-4" id="bio">
                     <br>
                     <p>Phelan O'Neill is a Project Manager and a Full Stack Development Bootcamp student based in
-                        Minneapolis,
-                        Minnesota. He has spent the past 8 years working at the forefront of politics and technology.</p>
+                        Minneapolis, Minnesota. He has spent the past 8 years working at the forefront of politics and
+                        technology.</p>
 
                     <p>After working in Iowa on Barack Obama's Presidential campaign in 2012, he traveled the country
-                        working
-                        on a variety of political campaigns and causes. On the campaign trail, Phelan always sought to
-                        find
+                        working on a variety of political campaigns and causes. On the campaign trail, Phelan always
+                        sought to find
                         new
                         technology to better connect with voters and volunteers alike.</p>
 
                     <p>Currently, he serves as a Project Manager for Young Invincibles where he manages the <a href="http://www.connector.getcoveredamerica.org/en-us/embed">Get
                             Covered Connector</a>, a web application that connects uninsured consumers to enrollment
-                        assisters
-                        in their area. </p>
+                        assisters in their area. </p>
 
                     <p>Phelan lives in the Uptown neighborhood, and when he's not working you can find him
                         on
@@ -87,41 +83,43 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <h2 class="pt-3 text-center portfolio-header">Portfolio</h2>
-                    <div id="carouselExampleIndicators" class="carousel slide pt-3 pb-5" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-interval='10000' -pause='TRUE' -slide-to="0"
-                                class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-interval='10000' -pause='TRUE' -slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-interval='10000' -pause='TRUE' -slide-to="2"></li>
-                        </ol>
+                    <div id="portfolioCarousel" class="carousel slide pt-3 pb-5" data-ride="carousel">
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="carousel-img" src="assets/images/gifs.png" alt="foo">
+                                    <a href="https://pwneill.github.io/GifTastic/" target="_blank"><img class="carousel-img" src="assets/images/gifs.png" alt="gifs"></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Giftastic <a href="https://github.com/pwneill/GifTastic" target="_blank">(Repository)</a><h5>
+                                        <p>Uses the GIPHY API to find GIFs of popular tv characters. Uses Boostrap, Javascript, JQuery and Cookies.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                    <a href="https://pwneill.github.io/The-Wire-RPG/" target="_blank"><img class="carousel-img" src="assets/images/rpg.png" alt="wireRPG">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Giftastic<h5>
-                                            <p>foo</p>
+                                    <h5>The Wire RPG  <a href="https://github.com/pwneill/The-Wire-RPG" target="_blank">(Repository)</a></h5>
+                                    <p>An RPG game featuring characters from HBO's <i>The Wire</i>. Uses Boostrap, Javascript and JQuery.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="carousel-img" src="assets/images/hangman.png" alt="foo">
+                                    <a href="https://pwneill.github.io/train-scheduler" target="_blank"><img class="carousel-img" src="assets/images/trainscheduler.png" alt="trains"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Hangman</h5>
-                                    <p>foo</p>
+                                    <h5>Train Scheduler<a href="https://github.com/pwneill/train-scheduler" target="_blank">(Repository)</a></h5>
+                                    <p>A train scheduling app that updates in real time. Uses Boostrap, Javascript, JQuery, Moment.js, and Firebase</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="carousel-img" src="assets/images/trainscheduler.png" alt="foo">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Trains</h5>
-                                    <p>foo</p>
+                                    <a href="https://github.com/pwneill/Whats-Happn" target="_blank"><img class="carousel-img" src="assets/images/whats-happn.png" alt="whats-happn"></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>What's Happ'n?<a href="https://github.com/pwneill/Whats-Happn" target="_blank">(Repository)</a></h5>
+                                        <p>A location based app that makes calls from the Eventbrite and SeatGeek APIs. Also uses Boostrap, Javascript, JQuery UI, and Firebase.</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -129,6 +127,8 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid portfolio-page mr-2" id="Contact">
+
     </section>
     <Footer>
         <p class="mb-0 mr-2" id="whiteText">© Phelan O'Neill 2018</p>

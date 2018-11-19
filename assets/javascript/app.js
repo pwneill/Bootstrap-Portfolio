@@ -1,5 +1,7 @@
 $(".carousel").hover(function() {
     $(".carousel-caption").addClass("animated fadeIn")
-    $(".carousel-caption").attr("visibility", "visible") 
+})
 
+$(document).ready(function(){
+    $(".carousel").carousel({interval: 10000});
 })
