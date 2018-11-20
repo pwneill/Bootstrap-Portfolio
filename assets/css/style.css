@@ -125,23 +125,18 @@ footer {
     padding-top: 65px; 
   }
 
-/* IN PROGRESS - make carousel caption font sizes change at different device widths
+/* IN PROGRESS - make carousel caption font sizes change at different device widths */
 
-If the screen size is 601px or more, set the font-size of <div> to 80px */
-/* @media only screen and (max-width: 601px) {
-    div.example {
-      font-size: 80px;
-    }
-  }
-   */
-  /* @media only screen and (max-width: 740) {
+@media (max-width: 740px) {
     .carousel-caption h5 {
         font-weight: 400;
+        font-size: 12px;
     }
     .carousel-caption p {
         font-weight: 200;
+        font-size: 10px;
       }
-  } */
+}
 /* 
 IN PROGRESS - when scroll to a section, highlight the relevant item in the header
   .active {
