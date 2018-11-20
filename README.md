@@ -71,8 +71,8 @@ to ensure your portfolio site will help you be [employer competitive](https://dr
 
   * Update your LinkedIn with the projects you've worked on so far
 
-  * Update the README for each project you linked to with a description of the problem,
-  how you solved it, and some information about your technical approach
+  <!-- * Update the README for each project you linked to with a description of the problem,
+  how you solved it, and some information about your technical approach -->
 
   <!-- * Suggested: refactor some of your code from earlier assignments to make them more readable -->
 
