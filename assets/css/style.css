@@ -146,6 +146,18 @@ footer {
 }
 
 @media (max-width: 740px) {
+    h1 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .title {
+        padding-bottom: 0;
+    }
+    .head, .portfolio-header {
+        padding-top: 0 !important;
+    }
     .carousel-caption h5 {
         font-weight: 400;
         font-size: 12px;
@@ -160,5 +172,11 @@ footer {
     }
     .carousel {
         position: absolute;
+    }
+}
+
+@media only screen {
+    .carousel .carousel-caption { 
+        visibility: visible; 
     }
 }
