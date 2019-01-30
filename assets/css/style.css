@@ -32,6 +32,11 @@ p, #bio, #contact {
     opacity: .6
 }
 
+#skill {
+    background: #fefefe;
+    opacity: .8
+}
+
 #landing-page {
     background-image: url("../images/landing-background.jpg");
     background-position: center top;
@@ -114,6 +119,19 @@ img {
     font-size: 20px;
 }
 
+#skills-page {
+    background-image: url("../images/skills-background.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+
+#landing-page, #portfolio-page, #contact-page, #skills-page { 
+    padding-top: 65px; 
+  }
+
 footer {
     border-top: 2px solid #fefefe;
     background: black;
@@ -121,11 +139,11 @@ footer {
     text-align: center;
 }
 
-#landing-page, #portfolio-page, #contact-page { 
-    padding-top: 65px; 
-  }
-
 /* IN PROGRESS - make carousel caption font sizes change at different device widths */
+
+#menu-center li {
+    display: inline-block;
+}
 
 @media (max-width: 740px) {
     .carousel-caption h5 {
@@ -136,9 +154,11 @@ footer {
         font-weight: 200;
         font-size: 10px;
       }
+    .carousel-caption {
+        position: relative;
+        bottom: -20px;
+    }
+    .carousel {
+        position: absolute;
+    }
 }
-/* 
-IN PROGRESS - when scroll to a section, highlight the relevant item in the header
-  .active {
-    background: red;
-} */
