@@ -11,6 +11,10 @@ header {
     text-align:center;
 }
 
+#landing-page {
+    margin: auto;
+}
+
 h4 {
     display: inline-block;
 }
