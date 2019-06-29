@@ -83,13 +83,16 @@ img {
 }
 
 .carousel .carousel-caption { 
-    visibility: hidden; 
+    opacity: 0; 
 }
 
 .carousel:hover .carousel-caption { 
-    visibility: visible; 
-    -webkit-animation: fadeIn 1.5s;
-    animation: fadeIn 1.5s;
+    visibility: visible;
+    -webkit-transition: opacity .6s ease-in;
+    -moz-transition: opacity .6s ease-in;
+    -o-transition: opacity .6s ease-in;
+    transition: opacity .6s ease-in;
+    opacity: 1;
 }
 
 .carousel {
@@ -179,8 +182,8 @@ footer {
     }
 }
 
-@media only screen {
+/* @media only screen {
     .carousel .carousel-caption { 
         visibility: visible; 
     }
-}
+} */
