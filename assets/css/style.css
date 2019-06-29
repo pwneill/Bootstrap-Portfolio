@@ -186,4 +186,8 @@ footer {
     .carousel .carousel-caption { 
         visibility: visible; 
     }
+    .carousel-caption {
+        position: relative;
+        bottom: -20px;
+    }
 }
