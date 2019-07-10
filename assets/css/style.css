@@ -109,6 +109,7 @@ img {
 .carousel-caption {
     background: #fefefe;
     width: 75%;
+    margin-top: -220px;
 }
 
 #contact-page {
@@ -174,6 +175,7 @@ footer {
         font-size: 10px;
       }
     .carousel-caption {
+        margin-top: 0px;
         position: relative;
         bottom: -20px;
     }
